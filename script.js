@@ -51,6 +51,19 @@ document.getElementById('pauseButton').addEventListener('click', function() {
     }
 });
 
+// **Novo**: Botão de próxima música
+document.getElementById('nextButton').addEventListener('click', function() {
+    if (isIntroPlaying || isMusicPlaying) {
+        // Se uma música está tocando, parar tudo antes de pular
+        if (currentIntro) currentIntro.pause();
+        if (currentMusic) currentMusic.pause();
+    }
+    
+    // Atualizar o índice da próxima música e tocar
+    currentTrack = nextTrack;
+    playTrack(currentTrack);
+});
+
 function playTrack(trackKey) {
     if (!tracks[trackKey]) {
         console.error('Música não encontrada!');

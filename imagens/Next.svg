@@ -1,0 +1,24 @@
+<svg width="83" height="84" viewBox="0 0 83 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_dd_1_82)">
+<rect x="14" y="14.5" width="55" height="55" rx="27.5" fill="#F3F3F3" fill-opacity="0.5" shape-rendering="crispEdges"/>
+</g>
+<path d="M44.375 46.3407L38.3405 50.7657C37.7822 51.1765 37.1208 51.4244 36.43 51.4817C35.7392 51.539 35.046 51.4034 34.4277 51.0901C33.8093 50.7768 33.29 50.2981 32.9276 49.7072C32.5652 49.1163 32.3739 48.4364 32.375 47.7432V37.2469C32.3756 36.5544 32.5679 35.8756 32.9306 35.2857C33.2934 34.6958 33.8124 34.2179 34.4301 33.9049C35.0479 33.5919 35.7402 33.4561 36.4305 33.5125C37.1207 33.5689 37.7818 33.8153 38.3405 34.2244L44.375 38.6494M44.375 46.3407V48.875C44.375 49.5712 44.6516 50.2389 45.1438 50.7312C45.6361 51.2234 46.3038 51.5 47 51.5C47.6962 51.5 48.3639 51.2234 48.8562 50.7312C49.3484 50.2389 49.625 49.5712 49.625 48.875V36.125C49.625 35.4288 49.3484 34.7611 48.8562 34.2688C48.3639 33.7766 47.6962 33.5 47 33.5C46.3038 33.5 45.6361 33.7766 45.1438 34.2688C44.6516 34.7611 44.375 35.4288 44.375 36.125V38.6494M44.375 46.3407V38.6494" stroke="black" stroke-width="2.5" stroke-linejoin="round"/>
+<defs>
+<filter id="filter0_dd_1_82" x="0" y="0.5" width="83" height="83" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="4" dy="4"/>
+<feGaussianBlur stdDeviation="5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+<feBlend mode="luminosity" in2="BackgroundImageFix" result="effect1_dropShadow_1_82"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-4" dy="-4"/>
+<feGaussianBlur stdDeviation="5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.254167 0 0 0 0 0.254167 0 0 0 0 0.254167 0 0 0 1 0"/>
+<feBlend mode="color-dodge" in2="effect1_dropShadow_1_82" result="effect2_dropShadow_1_82"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_82" result="shape"/>
+</filter>
+</defs>
+</svg>
