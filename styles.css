@@ -1,11 +1,15 @@
 body {
-    width: 1440px;
-    height: 1024px;
-    flex-shrink: 0;
-    background: url('imagens/fundo.png') lightgray 50% / cover no-repeat;
-    
-
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start; /* Alinha ao topo para permitir o ajuste manual com margin-top */
+    background: url('imagens/fundo.png') no-repeat center center fixed; 
+    background-size: cover;
 }
+
 /* Estilizando a caixa */
 .content-box {
     display: flex;
@@ -15,23 +19,45 @@ body {
     padding: 24px;
     gap: 10px; /* Espaçamento entre os elementos */
     width: 406px; /* Largura da caixa */
-    height: 187px; /* Altura da caixa */
+    height: 170px; /* Altura da caixa */
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.55);
     box-shadow: -2px -2px 6px 0px #B0B0B0, 2px 2px 6px 0px rgba(0, 0, 0, 0.50);
     backdrop-filter: blur(3px);
+    margin-top: 390px; /* Ajuste para mover a caixa para baixo */
+    margin-right: 24px; /* Ajuste para mover a caixa para esquerda */
 }
+
+.content-box-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    gap: 10px; /* Espaçamento entre os elementos */
+    width: 200px; /* Largura da caixa */
+    height: 170px; /* Altura da caixa */
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: -2px -2px 6px 0px #B0B0B0, 2px 2px 6px 0px rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(3px);
+    margin-top: 390px; /* Ajuste para mover a caixa para baixo */
+    margin-left: 24px; /* Ajuste para mover a caixa para esquerda */
+}
+
 /* Estilizando o container dos botões */
 .button-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px; /* Espaçamento entre os botões */
+    gap: 14px; /* Espaçamento entre os botões */
+    margin-top: 75px; /* Adiciona espaço entre o conteúdo superior e os botões */
 }
-/* Estilizando os botões e as imagens */
+
+/* Estilizando os botões*/
 button {
     width: 60px;
-    height: 60px;
+    height: 70px;
     border: none;
     padding: 0;
     background: transparent;
@@ -40,27 +66,75 @@ button {
     justify-content: center;
     align-items: center;
 }
+.button-1{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 20px;
+    background: rgba(243, 243, 243, 0.50);
+    box-shadow: -2px -2px 6px 0px #B0B0B0, 2px 2px 6px 0px rgba(0, 0, 0, 0.50);
+
+}
+.button-2{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 20px;
+    background: rgba(243, 243, 243, 0.50);
+    box-shadow: -2px -2px 6px 0px #B0B0B0, 2px 2px 6px 0px rgba(0, 0, 0, 0.50);
+    margin-top:30px;
+}
+/* Estilizando o texto do botão 1 */
+.button-1 button {
+    width: auto; /* Remove a largura fixa para melhor ajuste */
+    color: #000;
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Estilizando o texto do botão 2 */
+.button-2 button {
+    width: auto; /* Remove a largura fixa para melhor ajuste */
+    color: #000;
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 
 
+p, #nextTrack {
+    position: absolute;
+    left: 20px; /* Ajusta a distância do lado direito */
+}
 
-p{
-    width: 82px;
+p {
+    top: 20px; /* Ajusta a distância do topo */
+    width: auto; /* Remove a largura fixa para melhor ajuste */
+    padding: 5px 10px; /* Ajusta o padding */
     color: #000;
     font-family: "SF Pro Display";
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    display: flex;
-    padding: 6px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     border-radius: 10px;
     background: rgba(243, 243, 243, 0.50);
     box-shadow: -2px -2px 6px 0px #B0B0B0, 2px 2px 6px 0px rgba(0, 0, 0, 0.50);
 }
+
 #nextTrack {
+    top: 50px; /* Ajusta a distância do topo */
     color: #000;
     font-family: "SF Pro Display", sans-serif; /* Adicione uma fonte alternativa */
     font-size: 14px;

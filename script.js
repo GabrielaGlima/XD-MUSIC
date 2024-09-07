@@ -129,4 +129,51 @@ function getRandomTrack(excludeTrack) {
     return newTrackNames[randomIndex];
 }
 
-    
+// Adicione as referências para os novos botões
+document.getElementById('button1').addEventListener('click', function() {
+    playSpecificAudio('audio1'); // Chama a função para tocar o áudio 1
+});
+
+document.getElementById('button2').addEventListener('click', function() {
+    playSpecificAudio('audio2'); // Chama a função para tocar o áudio 2
+});
+
+// Adicione os áudios específicos
+const specificAudios = {
+    'audio1': 'audios/Iniciando a XD.fm.mp3',
+    'audio2': 'audios/Vinheta da XD.fm.mp3'
+};
+
+function playSpecificAudio(audioKey) {
+    const audioSrc = specificAudios[audioKey];
+    if (audioSrc) {
+        const audio = new Audio(audioSrc);
+        audio.play().catch(error => {
+            console.error('Erro ao tocar o áudio específico:', error);
+        });
+    } else {
+        console.error('Áudio específico não encontrado!');
+    }
+}
+
+// Mapeamento de imagens para troca
+const imagePaths = {
+    play: 'imagens/Play-Pause.png',
+    pause: 'imagens/Shuffle.png' // Exemplo: Imagem alternativa para quando clicado
+};
+
+// Referência para o botão e a imagem dentro do botão
+const pauseButton = document.getElementById('pauseButton');
+const playRandomImage = pauseButton.querySelector('img');
+
+// Adiciona o evento de clique ao botão
+pauseButton.addEventListener('click', function() {
+    // Troca a imagem atual
+    if (playRandomImage.src.includes(imagePaths.play)) {
+        playRandomImage.src = imagePaths.pause;
+    } else {
+        playRandomImage.src = imagePaths.play;
+    }
+
+    // Adicione aqui a lógica para tocar a música aleatória
+});
