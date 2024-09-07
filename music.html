@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +8,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button id="playRandomButton">Reproduzir Aleatoriamente</button>
-    <button id="pauseButton" disabled>Pausar</button>
-    <button id="nextButton">Próxima</button>
-    
+    <div class="content-box">
     <!-- Espaço para exibir o nome da música -->
-    <h2 id="nextTrack">Próxima música: Nenhuma</h2>
+    <p>Próxima música:</p>
+    <h2 id="nextTrack" class="nextTrack"></h2>
 
+    <!-- Container para os botões -->
+    <div class="button-container">
+        <button id="playRandomButton">
+            <img src="imagens/Shuffle.png" alt="Play Random">
+        </button>
+        <button id="pauseButton" disabled>
+            <img src="imagens/Play-Pause.png" alt="Pause">
+        </button>
+        <button id="nextButton">
+            <img src="imagens/Next.png" alt="Next">
+        </button>
+    </div>
+    </div>
+    
+    
     <script src="script.js"></script>
 </body>
 </html>

@@ -29,7 +29,7 @@ document.getElementById('playRandomButton').addEventListener('click', function()
 
     // Escolher e exibir a próxima música
     nextTrack = getRandomTrack(randomTrack);
-    document.getElementById('nextTrack').textContent = `Próxima música: ${nextTrack}`;
+    document.getElementById('nextTrack').textContent = '${nextTrack}';
 
     // Tocar a música
     playTrack(randomTrack);
@@ -39,7 +39,6 @@ document.getElementById('playRandomButton').addEventListener('click', function()
 document.getElementById('pauseButton').addEventListener('click', function() {
     if (isPaused) {
         // Se pausado, despausar e tocar a próxima música
-        this.textContent = 'Pausar';
         isPaused = false;
         if (!isIntroPlaying && !isMusicPlaying) {
             playTrack(nextTrack); // Tocar a próxima música
@@ -47,7 +46,6 @@ document.getElementById('pauseButton').addEventListener('click', function() {
     } else {
         // Se não pausado, marcar para pausar após a música terminar
         isPausedAfterCurrent = true;
-        this.textContent = 'Despausar';
     }
 });
 
@@ -91,11 +89,11 @@ function playTrack(trackKey) {
 
     // Atualizar a próxima música
     nextTrack = getRandomTrack(currentTrack);
-    document.getElementById('nextTrack').textContent = `Próxima música: ${nextTrack}`;
+    document.getElementById('nextTrack').textContent = `${nextTrack}`;
 
     const pauseButton = document.getElementById('pauseButton');
     pauseButton.disabled = false;
-    pauseButton.textContent = 'Pausar';
+    
 
     // Tocar a intro
     currentIntro.play().then(() => {
