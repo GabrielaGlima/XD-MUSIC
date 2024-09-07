@@ -11,6 +11,12 @@ const tracks = {
     
 };
 
+// Adicione os áudios específicos
+const specificAudios = {
+    'audio1': 'audios/Iniciando a XD.fm.mp3',
+    'audio2': 'audios/Vinheta da XD.fm.mp3'
+};
+
 // Variáveis globais para controle do áudio
 let currentIntro = null;
 let currentMusic = null;
@@ -137,12 +143,6 @@ document.getElementById('button1').addEventListener('click', function() {
 document.getElementById('button2').addEventListener('click', function() {
     playSpecificAudio('audio2'); // Chama a função para tocar o áudio 2
 });
-
-// Adicione os áudios específicos
-const specificAudios = {
-    'audio1': 'audios/Iniciando a XD.fm.mp3',
-    'audio2': 'audios/Vinheta da XD.fm.mp3'
-};
 
 function playSpecificAudio(audioKey) {
     const audioSrc = specificAudios[audioKey];

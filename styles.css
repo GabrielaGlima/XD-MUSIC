@@ -66,6 +66,7 @@ button {
     justify-content: center;
     align-items: center;
 }
+
 .button-1{
     height: 50px;
     display: flex;
@@ -90,9 +91,11 @@ button {
     box-shadow: -2px -2px 6px 0px #B0B0B0, 2px 2px 6px 0px rgba(0, 0, 0, 0.50);
     margin-top:30px;
 }
+
 /* Estilizando o texto do botão 1 */
 .button-1 button {
-    width: auto; /* Remove a largura fixa para melhor ajuste */
+    width: 100%; /* Ocupa toda a largura da div pai */
+    height: 100%; /* Ocupa toda a altura da div pai */
     color: #000;
     font-family: "SF Pro Display";
     font-size: 16px;
@@ -103,7 +106,8 @@ button {
 
 /* Estilizando o texto do botão 2 */
 .button-2 button {
-    width: auto; /* Remove a largura fixa para melhor ajuste */
+    width: 100%; /* Ocupa toda a largura da div*/
+    height: 100%; /* Ocupa toda a altura da div*/
     color: #000;
     font-family: "SF Pro Display";
     font-size: 16px;
@@ -111,7 +115,6 @@ button {
     font-weight: 500;
     line-height: normal;
 }
-
 
 p, #nextTrack {
     position: absolute;
