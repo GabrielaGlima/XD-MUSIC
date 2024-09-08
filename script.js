@@ -158,8 +158,8 @@ function playSpecificAudio(audioKey) {
 
 // Mapeamento de imagens para troca
 const imagePaths = {
-    play: 'imagens/Play-Pause.png',
-    pause: 'imagens/Shuffle.png' // Exemplo: Imagem alternativa para quando clicado
+    play: 'imagens/Play.png',
+    pause: 'imagens/Pause.png' // Exemplo: Imagem alternativa para quando clicado
 };
 
 // Referência para o botão e a imagem dentro do botão
